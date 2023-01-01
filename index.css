@@ -1,0 +1,286 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+
+}
+body{
+
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+.mainpage{
+    height: 109vh;
+    background:url(3.jpg) ;
+    background-size: cover;
+}
+.mainpage nav{
+    display: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+    box-shadow:2px 2px 2px rgb(220 197 197 / 26%), -2px -2px 52px rgba(43, 17, 121, 0.86);
+    border-radius: 20%;
+    margin-top: 20px;
+    position: relative;
+}
+.logo{
+    color:black;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+span{
+    color: rgb(173, 8, 198);
+    font-size: 40px;
+}
+ul{
+width: 50%;
+display: flex;
+align-items: center;
+font-size: 17px;
+margin-right: 260px;
+}
+ul li{
+    margin:0px 18Px;
+   list-style: none;
+   margin-right: 30px;
+}
+ul li a{
+    color: black;
+    text-decoration: none;
+}
+ul li a:hover{
+    border-bottom: 4px solid rgb(173, 8, 198);
+    transition: 0.2s;
+}
+.icon {
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    margin-top: 20px;
+    position: absolute;
+    left:87%;
+}
+.icon a{
+    color:black;
+    font-size: 17px;
+    text-decoration: none;
+}
+.icon a:hover{
+    color: rgb(173, 8, 198);
+}
+.container{
+    width: 50%;
+    margin-top:130px;
+}
+.container h2{
+font-size: 60px;
+color: black;
+line-height: 90px;
+text-align: center;
+}
+.container h4{
+    color:rgb(173, 8, 198);
+    font-size: 30px;
+    line-height: 50px;
+    margin-left: 110px;
+}
+.container p{
+font-size: 22px;
+width:69%;
+margin-left: 120px;
+}
+button{
+    margin-left: 160px;
+    margin-top: 30px;
+    background-color: rgb(173, 8, 198);
+    border: none;
+    padding: 5px 6px;
+    font-size: 19px;
+    border-radius: 20%;
+}
+button:hover{
+   background: rgb(0, 0, 0);
+   color: rgb(173, 8, 198);
+}
+.about{
+    height: 100VH;
+    background: rgb(241, 233, 224);
+}
+.about h3 , .products h3{
+text-align: center;
+font-size: 30px;
+padding-top: 1rem;
+padding-bottom: 1rem;
+}
+.vidtxt{
+    display: flex;
+
+}
+.about .vidio{
+margin-left: 1rem;
+position: relative;
+margin-top: 3rem;
+
+}
+.about .vidio h4{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    text-align: center;
+    background: rgb(241, 233, 224);
+    padding: 30px;
+    transform:translateY(-50%);
+    font-size: 30px;
+    mix-blend-mode: screen;
+}
+.contune{
+    margin-left: 2rem;
+    margin-top: 2.5rem;
+}
+.contune h2{
+width: 36%;
+text-align: center;
+border-bottom: 5px solid rgb(173, 8, 198);
+}
+.contune p{
+    margin-top: 10px;
+    line-height: 30px;
+}
+.products{
+    padding-top: 1rem;
+    height: 160vh;
+    background: rgb(231, 221, 221);
+}
+.boxes{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    gap:60px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    box-shadow: 3px 4px 3px rgba(63, 3, 93, 0.952), -3px -2px 9px rgba(3, 44, 18, 0.86);
+    text-align: center;
+    position: relative;
+}
+.box .image img{
+    display: flex;
+    width: 350px;
+    height:250px ;
+}
+.box .image img:hover{
+    transform:scale(0.9);
+}
+.icoons{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    background: rgb(173, 8, 198);
+    padding: 9px 0px;  
+    width: 100%;
+}
+.icoons a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.icoons a:hover{
+    color: white;
+}
+.content{
+    margin-top: 30px;
+}
+.content h3{
+
+}
+
+
+/*responsive*/
+@media (max-width:1000px){
+    body{
+      background-position:-450px;
+     overflow:auto;
+     overflow-x: hidden;
+    }
+    .mainpage{
+        height: auto;
+    }
+    .mainpage nav{
+    border-radius: 10%;
+    height: 420px;
+    margin-top: 20px;
+    display: inline-block;
+    margin-left: 13px;
+    }
+    .logo{
+        margin-left: 40px;     
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    ul li {
+        border: 2px solid rgb(188, 156, 156);
+        width: 100%;
+        margin: 9px;
+        font-size: 20px;
+        padding: 6px;
+        text-align: center;
+    }
+  .icon{
+   left:77%;
+   gap:50px;
+   bottom:89%;
+   gap:20px;
+  }
+  .container{
+    width: 100%;
+    margin-top: 50px;
+  }
+  .container h2{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+  }
+  .container h4{
+    font-size: 22px;
+    line-height: 30px;
+    margin-left: 85px;
+  }
+  .container p{
+   display: none;
+  }
+  button{
+margin-bottom: 20px;
+  }
+  .about{
+    height: auto;
+    width: 100%;
+  }
+  .vidtxt{
+    flex-wrap: wrap;
+  }
+  .vidio video{
+    width: 96%;
+  }
+  .about .vidio h4{
+    width: 96%;
+  }
+  .about .vidio{
+    margin-top: 1rem;
+  }
+  .about .contune h2{
+width: 50%;
+  }
+  .products{
+    height: 440Vh;
+  }
+}
